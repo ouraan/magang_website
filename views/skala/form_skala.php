@@ -7,10 +7,29 @@
     <title>Skala | Form Input</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/styles/style_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg py-4 shadow-sm">
-        <a href="../../index.php" class="navbar-brand ml-5">MAGANG</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../dashboard.php">Magang<span>.</span></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../views/dashboard.php">View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../views/dashboard.php">WP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../views/dashboard.php">SAW</a>
+                    </li>
+                </ul>
+                <div class="d-flex ml-auto">
+                    <a class="nav-link" href="../../models/user/logout.php">Log out<i class="fa fa-sign-out pl-2" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <div class="container-fluid my-5"  id="div-reserv">
@@ -33,7 +52,7 @@
                         <input type="text" class="form-control mt-1 py-4" placeholder="keterangan" name="keterangan" value=""/>
                     </div>
                     <div class="button-group">
-                        <button type="submit" name="insert" class="btn btn-warning text-white shadow-sm" id="btn-count">Input Skala</button>
+                        <button type="submit" name="insert" class="btn text-white shadow-sm" id="btn-count">Input Skala</button>
                     </div>
                 </div>
             </div>

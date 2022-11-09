@@ -9,16 +9,12 @@
     <link rel="stylesheet" href="../../assets/css/styles/style_read.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg py-4 shadow-sm">
-        <a href="../../index.php" class="navbar-brand ml-5">MAGANG</a>
-    </nav>
-
-    <div class="container-fluid py-5" id="div-detail">
+    <div class="container-fluid py-4" id="div-detail">
         <div class="card mb-5">
-            <div class="card-header">
+            <div class="card-header bg-white">
                 <div class="d-flex justify-content-between">
                     <h5 class="mt-2">Detail Matrix</h5>
-                    <a href="form_matrix.php" class="btn btn-warning text-white shadow-sm">Add Matrix</a>
+                    <a href="matrix/form_matrix.php" class="btn text-white shadow-sm">Add Matrix</a>
                 </div>
             </div>
             <div class="card-body">
@@ -33,7 +29,6 @@
                     </thead>
                     <tbody>
                         <?php
-                            include "../../models/config.php";
                             $read = "SELECT * FROM tb_matrixkeputusan ORDER BY id_matrix";
                             $exec_read = $koneksi->query($read);
                             while($data_read = $exec_read->fetch_array()){
